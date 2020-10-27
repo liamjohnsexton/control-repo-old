@@ -25,17 +25,5 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  user { 'liam_sexton':
-   ensure => present,
-   password => 'Qu@lity!',
-   groups => 'Administrators'
- }
- 
-  group { 'Local Admins':
-   name => 'Administrators',
-   ensure => present,
-   members => ['liam_sexton'],
-   auth_membership => false,
- }
  
 }
