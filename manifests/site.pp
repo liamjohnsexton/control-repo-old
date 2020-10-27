@@ -25,7 +25,17 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
+  user { 'liam_sexton':
+   ensure => present,
+   password => 'Qu@lity!',
+   groups => 'Administrators'
+ }
+ 
+  group { 'Local Admins':
+   name => 'Administrators',
+   ensure => present,
+   members => ['liam_sexton'],
+   auth_membership => false,
+ }
+ 
 }
