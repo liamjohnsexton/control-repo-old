@@ -6,10 +6,4 @@ class profile::platform::baseline::users::windows {
     groups   => 'Administrators'
   }
 
-  group { 'Local Administrators':
-    ensure  => present
-    name    => 'Administrators'
-    members => 'liam_sexton'
-  }
-
 }
