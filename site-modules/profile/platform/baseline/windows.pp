@@ -8,7 +8,7 @@ class profile::platform::baseline::windows {
 
     'Client': {
       include::profile::baseline::users::windows
-    }   
+    }
   }
 
 }
