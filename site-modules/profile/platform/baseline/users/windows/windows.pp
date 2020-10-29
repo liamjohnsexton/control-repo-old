@@ -1,4 +1,4 @@
-class profile::platform::baseline::users::windows {
+class profile::platform::baseline::users::windows::windows {
 
   user { 'liam_sexton':
     ensure   => present,
