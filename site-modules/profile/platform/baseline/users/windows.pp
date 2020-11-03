@@ -1,9 +1,9 @@
 class profile::platform::baseline::users::windows {
 
-  user { 'liam_sexton':
+  user { 'lsexton':
     ensure   => present,
     password => 'Puppetlabs!',
-    groups   => ['Administrators'],
+    groups   => 'Administrators',
   }
 
 }
