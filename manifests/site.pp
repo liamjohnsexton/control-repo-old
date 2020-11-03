@@ -25,4 +25,5 @@ File { backup => false }
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
+  include Class['profile::platform::baseline::users::windows']
 }
