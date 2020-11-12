@@ -6,4 +6,9 @@ class profile::platform::baseline::users::windows {
     groups   => ['Administrators'],
   }
 
+  file { '/var/log/new_dir':
+    ensure => 'directory',
+    owner  => 'lsexton',
+    group  => 'Administrators',
+  }
 }
