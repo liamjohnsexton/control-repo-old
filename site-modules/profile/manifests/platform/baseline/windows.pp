@@ -5,6 +5,7 @@ class profile::platform::baseline::windows {
       include ::profile::platform::baseline::users::windows
       include ::profile::platform::baseline::directories::directories
       include ::profile::platform::baseline::registry::registry
+      include ::profile::platform::baseline::iis::iis
   }
 
 #numpty liam has realised he's gotta spin up a VM with internet explorer lol
