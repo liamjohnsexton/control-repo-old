@@ -5,4 +5,12 @@ class profile::platform::baseline::directories::directories {
     owner  => 'lsexton',
     group  => 'Administrators',
   }
+
+  acl { 'C:\Users\Administrator\Documents\new-dir':
+    permissions => [
+    { identity => 'Administrator', rights => ['read'] },
+    { identity => 'lsexton', rights => ['full'] }
+      ]
+  }
+
 }
