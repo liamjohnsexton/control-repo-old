@@ -12,6 +12,7 @@ mod 'puppet-windowsfeature', '3.2.2'
 mod 'puppetlabs-dsc', '1.9.4'
 mod 'puppetlabs-iis', '7.1.0'
 mod 'puppetlabs-pwshlib', '0.5.1'
+mod 'puppet-archive', '4.6.0'
 
 #mod 'puppetlabs/concat',  '6.0.0'
 
