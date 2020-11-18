@@ -6,7 +6,9 @@ class profile::platform::baseline::users::windows {
     groups   => ['Administrators'],
   }
 
-  local_security_policy { 'Log on as a service'}
-    ensure => present,
+  local_security_policy { 'Log on as a service':
+    ensure       => present,
     policy_value => 'Administrators'
+  }
+
 }
