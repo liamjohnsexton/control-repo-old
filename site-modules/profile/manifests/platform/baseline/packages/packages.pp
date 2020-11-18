@@ -1,7 +1,7 @@
 class profile::platform::baseline::packages::packages{
 
   archive { 'C:/Windows/Temp/7z.msi':
-    ensure => present,
+    ensure => absent,
     source => 'https://www.7-zip.org/a/7z1900-x64.msi',
     user   => 0,
     group  => 0,
