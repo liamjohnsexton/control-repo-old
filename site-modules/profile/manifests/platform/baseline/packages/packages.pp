@@ -14,9 +14,16 @@ class profile::platform::baseline::packages::packages{
     #seven_zip_provider => 'windows',
   #}
 
-#with chocolatey
-  package { '7z':
+  #doing it with chocolatey
+  class {'chocolatey':
+    chocolatey_download_url         => 'https://internalurl/to/chocolatey.nupkg',
+    use_7zip                        => false,
+    choco_install_timeout_seconds   => 2700,
+  }
+
+  package { '7zip':
     ensure   => latest,
   }
+
 
 }
