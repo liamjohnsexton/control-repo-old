@@ -14,6 +14,7 @@ mod 'puppetlabs-iis', '7.1.0'
 mod 'puppetlabs-pwshlib', '0.5.1'
 mod 'puppet-archive', '4.6.0'
 mod 'puppetlabs-chocolatey', '5.1.1'
+mod 'puppetlabs-powershell', '4.0.0'
 
 #mod 'puppetlabs/concat',  '6.0.0'
 
