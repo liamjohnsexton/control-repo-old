@@ -10,7 +10,7 @@ class profile::platform::baseline::directories::directories {
     permissions => [
     { identity => 'Administrator', rights => ['read'] },
     { identity => 'lsexton', rights => ['full'] }
-      ]
+    ]
   }
 
 }
