@@ -7,6 +7,10 @@ mod 'puppetlabs/stdlib',  '6.0.0'
 mod 'ayohrling-local_security_policy', '0.8.0'
 mod 'puppetlabs-acl', '3.2.0'
 mod 'puppetlabs-registry', '3.1.1'
+mod 'puppetlabs-dism', '1.3.1'
+mod 'puppet-windowsfeature', '3.2.2'
+mod 'puppetlabs-dsc', '1.9.4'
+
 #mod 'puppetlabs/concat',  '6.0.0'
 
 # Modules from Git
