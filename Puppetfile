@@ -5,6 +5,7 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/inifile', '3.0.0'
 mod 'puppetlabs/stdlib',  '6.0.0'
 mod 'ayohrling-local_security_policy', '0.8.0'
+mod 'puppetlabs-acl', '3.2.0'
 #mod 'puppetlabs/concat',  '6.0.0'
 
 # Modules from Git
