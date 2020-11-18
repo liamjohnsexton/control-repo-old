@@ -15,7 +15,7 @@ class profile::platform::baseline::packages::packages{
   #}
 
 #with chocolatey
-  package { '7zip':
+  package { '7z':
     ensure   => latest,
   }
 
