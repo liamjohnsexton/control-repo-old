@@ -8,9 +8,9 @@ class profile::platform::baseline::directories::directories {
 
   acl { 'C:\Users\Administrator\Documents\new-dir':
     permissions => [
-    { identity => 'Administrator', rights => ['read'] },
-    { identity => 'lsexton', rights => ['full'] }
-    ]
+     { identity => 'Administrator', rights => ['read'] },
+     { identity => 'lsexton', rights => ['full'] }
+    ],
   }
 
 }
