@@ -36,7 +36,7 @@ class profile::platform::baseline::packages::packages{
   }
 
   reboot { 'after':
-    subscribe       => Package['7zip'],
+    subscribe => Package['7zip'],
   }
 
 
