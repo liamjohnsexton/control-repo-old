@@ -13,7 +13,7 @@ class profile::platform::baseline::iis::iis {
   } ->
 
   iis_site { 'minimal':
-    ensure          => 'started',
+    ensure          => 'present',
     physicalpath    => 'c:\\inetpub\\minimal',
     applicationpool => 'minimal_site_app_pool',
     require         => File['minimal'],
