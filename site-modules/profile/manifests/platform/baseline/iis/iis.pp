@@ -20,7 +20,7 @@ class profile::platform::baseline::iis::iis {
   }
 
   file { 'minimal':
-    ensure => 'present',
+    ensure => 'directory',
     path   => 'c:\\inetpub\\minimal',
   }
 
