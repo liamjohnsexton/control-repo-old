@@ -23,7 +23,7 @@ require ::chocolatey
   #}
 
   package { '7zip':
-    ensure    => absent,
+    ensure    => latest,
     provider  => 'chocolatey',
   }
 
