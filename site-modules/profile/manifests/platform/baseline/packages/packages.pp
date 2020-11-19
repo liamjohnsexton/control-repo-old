@@ -24,7 +24,7 @@ require ::chocolatey
   #}
 
   package { '7zip':
-    ensure    => latest,
+    ensure    => installed,
     provider  => 'chocolatey',
   }
 
