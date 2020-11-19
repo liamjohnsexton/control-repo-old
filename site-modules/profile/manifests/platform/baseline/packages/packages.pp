@@ -26,7 +26,7 @@ class profile::platform::baseline::packages::packages{
 
   package { '7zip':
     provider => chocolatey,
-    ensure   => latest,
+    ensure   => installed,latest,
   }
 
   #reboot { 'after':
