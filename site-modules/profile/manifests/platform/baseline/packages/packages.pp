@@ -18,11 +18,11 @@ class profile::platform::baseline::packages::packages{
 
   #doing it with chocolatey
 
-  class {'chocolatey':
-    chocolatey_download_url         => 'https://chocolatey.org/api/v2/package/chocolatey',
-    use_7zip                        => false,
-    choco_install_timeout_seconds   => 2700,
-  }
+  #class {'chocolatey':
+   # chocolatey_download_url         => 'https://chocolatey.org/api/v2/package/chocolatey',
+    #use_7zip                        => false,
+    #choco_install_timeout_seconds   => 2700,
+  #}
 
   package {'7z':
     ensure   => latest,
