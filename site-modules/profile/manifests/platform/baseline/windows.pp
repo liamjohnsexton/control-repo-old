@@ -1,5 +1,5 @@
 class profile::platform::baseline::windows {
-#logic depending on the type of windows vm it is
+#logic depending on the type of windows vm it is, only apply this class on group 
 
   case $::windows_installation_type {
     'Server':{
