@@ -36,9 +36,9 @@ class profile::platform::baseline::packages::packages{
     ensure   => latest,
   }
 
-  reboot { 'after':
-    subscribe => Package['7zip'],
-  }
+  #reboot { 'after':
+   # subscribe => Package['7zip'],
+  #}
 
 
 }
