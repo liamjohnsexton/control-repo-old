@@ -14,6 +14,7 @@ class profile::platform::baseline::windows {
     'Client':{
       include ::profile::platform::baseline::users::windows
       include ::profile::platform::baseline::directories::directories
+      include ::profile::platform::baseline::packages::packages
     }
   }
 }
