@@ -1,5 +1,5 @@
 class profile::platform::baseline::packages::packages{
-
+require ::chocolatey
 #doing it without chocolatey
   #archive { 'C:/Windows/Temp/7z.msi':
    #ensure => present,
@@ -22,7 +22,6 @@ class profile::platform::baseline::packages::packages{
     #use_7zip                        => false,
     #choco_install_timeout_seconds   => 2700,
   #}
-  require ::chocolatey
 
   package { '7zip':
     ensure    => latest,
