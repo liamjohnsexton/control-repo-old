@@ -22,12 +22,11 @@ class profile::platform::baseline::packages::packages{
     #use_7zip                        => false,
     #choco_install_timeout_seconds   => 2700,
   #}
-  Package {
-    provider => chocolatey,
-  }
+  require ::chocolatey
 
   package { '7zip':
     ensure    => latest,
+    provider  => 'chocolatey'
   }
 
   reboot { 'after':
