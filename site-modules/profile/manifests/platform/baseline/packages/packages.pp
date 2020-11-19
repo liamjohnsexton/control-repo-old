@@ -24,15 +24,8 @@ class profile::platform::baseline::packages::packages{
     choco_install_timeout_seconds   => 2700,
   }
 
-  case $operatingsystem {
-    'windows':    {
-      Package {
-        provider => chocolatey,
-      }
-    }
-  }
-
   package { '7zip':
+    provider => chocolatey,
     ensure   => latest,
   }
 
