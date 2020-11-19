@@ -17,7 +17,6 @@ class profile::platform::baseline::packages::packages{
 
 
   #doing it with chocolatey
-
   #class {'chocolatey':
    # chocolatey_download_url         => 'https://chocolatey.org/api/v2/package/chocolatey',
     #use_7zip                        => false,
@@ -27,14 +26,13 @@ class profile::platform::baseline::packages::packages{
     provider => chocolatey,
   }
 
-
-  package {'7zip':
-    ensure   => latest,
+  package { '7zip':
+    ensure    => latest,
   }
 
-  #reboot { 'after':
-   # subscribe => Package['7zip'],
-  #}
+  reboot { 'after':
+    subscribe => Package['7zip'],
+  }
 
 
 }
