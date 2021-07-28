@@ -17,3 +17,47 @@ hierarchy:
     paths:
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
+
+lookup_options:
+  "^relay::.*token":
+    convert_to: "Sensitive"
+
+# this token is from the "trigger" configuration
+relay::relay_trigger_token: >
+  ENC[PKCS7,MIIC7QYJKoZIhvcNAQcDoIIC3jCCAtoCAQAxggEhMIIBHQIBAD
+  AFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEApsS8q+N8N6WCunKJgIyMYbxBUg
+  KpzYEX53d6OPV2w9JYUvLPQ0Q0yCWTfjIQgUIOZWRRxKTWf8HxaFBm8/Typo
+  SXVZLNLb8sZC22C2aqstflhrOFvxRh9qcEwEZhhfsalhHMhwhXd4a/yfQXif
+  sMKt4tkN6xI+TYAhbV3w4xGHXMrBsuPoU7GTtj9UqCBJokWoD/x4NItwIGir
+  noqjln4k2BlA3I9OutktUnA3NWUi/Wuk48wb5WNdhe8PgXqb6tvKIOK9yU3y
+  HQBOsDOvgCdjXsWb6V5meMTxHI/8zyElNHpcgB8Ap0EYJ/tm2OnTfQojnyaL
+  MnYBYYURYc4F7YJjCCAa4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEBKBmT
+  ZNZY01DVJYvRWLYXGAggGAFxs9wp6FT3ko9tssVyviIsjyS+yKh5SvTVzcfW
+  P9NX96lpJMv9MgM/SAk0lzeayF+O6XnMIX8zEzwtrHBQ3x69QPHT2cSIhAog
+  oTKlHBRXgoxAJ+/IsmMebOavJc+u9IIsUFVkpZAD95P13nAhJSRWdCG4aYmg
+  blAQJspyFu/hP4GI92CxayN9z5Qi69XndVpkGEYsr0P7KoFCTtVMKpcCPCkQ
+  pcYmXWpuebRARG5vgV65gi5kmil/OKAaKa015jrOM9dCZrm+gcaI0i8feyLA
+  Wq6rPEPT184qzuqVx6EC56QLk73YnjA15TbVKcaX6lbQq42vPd8e0u3941+0
+  FwD0tpWIj41SfVMb6UvKyZBoIo4Dku/gba4kELQQH95SaGHm9RQFDS1Jxy1R
+  n18VNLg/m1I8qZCu19rGbPZQBme1By92hM80z+oUZ0JqUfkMgMfT/h9KcX+p
+  mKAF+DpEBsz/jYe4mAZHtKi72wcNWsKREa4aZaR8bd/Ln1c0E4cdXd]
+    
+# this token is from the Puppet connection setup
+relay::relay_connection_token: >
+  ENC[PKCS7,MIICrQYJKoZIhvcNAQcDoIICnjCCApoCAQAxggEhMIIBHQIBAD
+  AFMAACAQEwDQYJKoZIhvcNAQEBBQAEggEAmZ3JO521TGfs2V8y1R/oG+AIni
+  xXw3V39spXOhUoMGmkJIrUMFO/zOuNbRZ8bJMeAF5gS6pZPish8bMbey19x2
+  EL0ejeUm/QJdrbCf8hHZU3BxOLCGGnd3pUtbxtsQWghVGmkbicPEFS4Bs69A
+  km1UEqvhkpCaNXPTHpSeqrSGWLX3YI+YoxBQSqUYCWULRVSHs/y2EIVqwqfk
+  +GIfzHxg71hJBO5VcEZGBmLCgIHr+zdCZXOX7dX3OlTluXgbMwxmCyTuFZQ7
+  /7VuYQGCvAfanlWWiZ92BvY9nwO7reVqSWa+PUrMpszmliK3s7gS0n6hkl+X
+  /yZos5BkxxPjv5ozCCAW4GCSqGSIb3DQEHATAdBglghkgBZQMEASoEEMHbj2
+  bo7ubt5rl71/SeP/qAggFAi4/xsYBwA83ZOeY71b+zVg+2SugtaYG76aqTcs
+  nbrXdkaE5CrEWo/GfUC8QoUSWSpzmUzitaoadqj8Qhd+oQ7K6M85R28aOuOh
+  x02mDEWXYLxj1DAy+QQ4XW/n4Ormib5430QV03BtZxm+ai8J3+djGa6p6M+e
+  /DhVg3HWUCkh2W7lmCXRpd0P+f6E3HCJKzbV5nk5PggSzFKPfWwzrXUSm6X1
+  nOWJezLYKr2yxEzCWUZaFkdCD6TPQN87UkN3Y3nbc8TDs/lFsTcEHuF7vqKT
+  8ZB2AmjTe3kpi99R5kP4Vsr+8WYV4XcJuNnn1tG7Cwf7MLPI1M3ZfY3f072i
+  yrRy0OwxwhOYcMD43XMggH6C8j7wvh8acnw4Sp9p5/JnIxsjVdl9ku+pqXRG
+  obhFtXJXGx2ZHHeqS2o2Tbuqswnps=]
+    
