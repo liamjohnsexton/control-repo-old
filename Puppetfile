@@ -20,6 +20,7 @@ mod 'puppetlabs-reboot', '3.1.0'
 mod 'puppetlabs-apache', '5.8.0'
 mod 'puppetlabs-mysql', '10.9.1'
 mod 'puppet-php', '7.1.0'
+mod 'puppetlabs-inifile', '5.1.0'
 
 #mod 'puppetlabs/concat',  '6.0.0'
 
