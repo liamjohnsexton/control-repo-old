@@ -24,11 +24,11 @@ File { backup => false }
 # Puppet Enterprise console and External Node Classifiers (ENC's).
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
-node 'puppetwin1.platform9.puppet.net' {
-  include Class['profile::platform::baseline::users::windows']
-}
+#node 'puppetwin1.platform9.puppet.net' {
+  #include Class['profile::platform::baseline::users::windows']
+#}
 
-node 'puppet-agent-wi.platform9.puppet.net' {
-  include Class['profile::platform::baseline::users::windows']
-}
+#node 'puppet-agent-wi.platform9.puppet.net' {
+  #include Class['profile::platform::baseline::users::windows']
+#}
 
