@@ -16,4 +16,6 @@ hierarchy:
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
 
-  
+lookup_options:
+  "^relay::.*token":
+    convert_to: "Sensitive"
