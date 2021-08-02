@@ -6,5 +6,4 @@ file { '/tmp/eyaml_decrypted.txt':
   ensure  => file,
   content => $sensitive_content,
   }
-
 }
